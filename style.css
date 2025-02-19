@@ -3,11 +3,33 @@ html, body {
     padding: 0;
   }  
 
-#Title-Section{
-    background: #F5E8E8;
+h3 {
+    font-size: 20px;
+    text-align: left; 
+}
+
+#Scroll-Guy{
+    width: 30px;
+    height: 50px; 
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+}
+#Bakery{
+    width: 80px;
+    height: 90px; 
+    position: fixed;
+    bottom: 0;
+    right:0;
+    z-index: 999;
+}
+
+#Title-Background{
+    background: #F49FB6;
     height: 80vh;  
     overflow: hidden;
     position: relative;
+    padding-bottom: 3vh;
 }
 
   
@@ -23,13 +45,13 @@ html, body {
     height: 100%;
     width: 100%;
     min-width: 1200px;
-    opacity: 0.15;
+    opacity: 0.30;
     animation: pan 120s linear infinite;
     will-change: background-position;
   }
   
 #patternBackground {
-    background: radial-gradient(transparent, #F5E8E8);
+    background: radial-gradient(transparent, #F49FB6);
     position: absolute;
     left: 0px;
     top: 0px;
@@ -46,4 +68,104 @@ html, body {
     100% {
         background-position: 100% 100%;
     }
+}
+
+#Title-Section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+#Title-and-Byline{
+    position: relative;
+    z-index: 9;
+    text-align: center;
+    background-color: yellow;
+}
+
+
+#Title-Image{
+    position: relative;
+    z-index: 10;
+    width: 300px;
+}
+
+#First-Text-Section{
+    background: #FAF8F0;
+    height: 160vh;  
+    overflow: hidden;
+    padding-top: 5vh;
+}
+
+#Story{
+    display: flex;
+    justify-content: center;
+}
+
+.story-text{
+    font-family: Poppins;
+    width: 40vw;
+    font-size: 15px;
+
+    text-align: justify; 
+}
+
+#B-roll{
+    height: 120vh;
+}
+
+#Origin{
+    background: #F49FB6;  
+    overflow: hidden;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+#bakedgoodsimage{
+    border-color: #0CCE6B;
+    border-width: 30px;
+    border-radius: 30px;
+    width: 100%;
+}
+
+#LineImage{
+    width: 100%;
+    overflow: hidsden;
+}
+
+#tiktoks{
+    width:100%;
+    overflow: hidden;
+    display: flex;
+    background: #FAF8F0;
+    
+}
+
+#Virality{
+    background: #FAF8F0;
+    overflow: hidden;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#Line{
+    background: #FAF8F0;
+    overflow: hidden;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#Trendiness{
+    background: #F49FB6;
+    overflow: hidden;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#Closing{
+    background: #FAF8F0;
+    overflow: hidden;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
