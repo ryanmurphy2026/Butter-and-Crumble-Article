@@ -8,6 +8,12 @@ h3 {
     text-align: left; 
 }
 
+h2  {
+    font-family: Poppins;
+    color: white;
+}
+
+
 #Scroll-Guy{
     width: 30px;
     height: 50px; 
@@ -135,11 +141,12 @@ h3 {
 }
 
 #tiktoks{
-    width:100%;
+    min-width:100%;
     overflow: hidden;
     display: flex;
     background: #FAF8F0;
-    
+    align-items: center;
+    object-fit: cover;
 }
 
 #Virality{
@@ -147,6 +154,15 @@ h3 {
     overflow: hidden;
     padding-top: 5vh;
     padding-bottom: 5vh;
+}
+
+#peopleorderingvideo{
+    min-width:100%;
+    display: inline;
+    overflow: hidden;
+    display: flex;
+    background: #FAF8F0;
+    align-items: center;
 }
 
 #Line{
@@ -168,4 +184,104 @@ h3 {
     overflow: hidden;
     padding-top: 5vh;
     padding-bottom: 5vh;
+}
+
+#Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Game { 
+    width: 600px; 
+    height: 375px;
+    border: 20px solid #ED4E8B;
+    background-image: url(game-background.png);
+    background-color: #0CCE6B;
+    background-size: 100% 100%;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    padding: 20px; 
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    outline: 2px solid white;
+    outline-offset: -20px;
+    
+}
+
+#Inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container { 
+    position: relative; 
+    display: inline-block; 
+}
+
+#Menu {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: #F49FB6;
+    
+
+}
+
+.croissant { 
+    width: 300px; 
+    height: 300px; 
+    background: url('croissant.png') no-repeat center/cover; 
+}
+
+.flavor, .pizazz { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 300px; 
+    height: 300px; 
+    display: none; 
+}
+
+
+button { 
+    margin: 5px; 
+    padding: 10px; 
+    cursor: pointer; 
+}
+
+#pizazz-options { 
+    display: none;
+}
+
+/*width*/
+::-webkit-scrollbar {
+width:auto;
+}
+/*track*/
+::-webkit-scrollbar-track {
+background:rgb(244, 159, 182);
+border-width:2px;
+border-style:solid;
+border-color:black;
+}
+/*thumb*/
+::-webkit-scrollbar-thumb {
+background:rgb(250, 248, 240);
+border-width:2px;
+border-style:solid;
+border-color:black;
+border-radius:4px;
+}
+/*thumb hover*/
+::-webkit-scrollbar-thumb:hover {
+background:rgba(230, 226, 220, 1);
+}
+/*thumb pressed*/
+::-webkit-scrollbar-thumb:active {
+background:rgba(193, 190, 185, 1);
 }

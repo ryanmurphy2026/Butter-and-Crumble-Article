@@ -1,0 +1,30 @@
+function changeOption(type, optionId) {
+    document.querySelectorAll('.' + type).forEach(el => el.style.display = 'none');
+    document.getElementById(optionId).style.display = 'block';
+
+    updateName(optionId);
+}
+
+function showOptions(category) {
+    document.getElementById('flavor-options').style.display = (category === 'flavor') ? 'block' : 'none';
+    document.getElementById('pizazz-options').style.display = (category === 'pizazz') ? 'block' : 'none';
+}
+
+function updateName(optionId) {
+
+    // Map options to names
+    let name = '';  // default name
+    if (optionId === 'pistachio') {
+        name = 'Pistachio Cream ';
+        document.getElementById('flavorName').textContent = name;
+    } else if (optionId === 'almond') {
+        name = 'Almond Butter ';
+        document.getElementById('flavorName').textContent = name;
+    } else if (optionId === 'cardamonsugar') {
+        name = 'Cardamon Sugar ';
+        document.getElementById('pizazzName').textContent = name;
+    } else if (optionId === 'poop') {
+        name = 'Poop ';
+        document.getElementById('pizazzName').textContent = name;
+    }
+}

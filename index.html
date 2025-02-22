@@ -59,7 +59,7 @@
           <h3>
             From pandemic pop-up to internet sensation
           </h3>
-            <img id= "bakedgoodsimage" src="https://cdn.vox-cdn.com/thumbor/RGcThUKPlqvBlhJ_KQ0pCNhxWWs=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/25024789/IMG_9124.jpeg" alt="an assortment of yummy croissants" width="100%">
+            <img id= "bakedgoodsimage" src="croissant-group-shot.jpg" width="100%">
           <p>
             Founder Sophie Smith originally began Butter & Crumble as a pop-up bakery in the Marina’s A16 during the pandemic. A line cook with experience from culinary school, Smith found a passion for baking in her downtime while A16 was shut down. Using the restaurant’s empty kitchen, she began toying around with cake recipes and began selling to family and friends.
           </p>
@@ -118,7 +118,7 @@
     </div>
 
     <div id="LineImage">
-      <img src="https://content.sfstandard.com/wp-content/uploads/2024/12/20241015-pastrymania-butterandcrumble_2_2e925d.jpg?crop=0px%2C1128px%2C8192px%2C4300px&w=2048" width="100%">
+      <img src="bc-wide-shot.jpg" width="100%">
     </div>
 
     <div id="Line">
@@ -180,6 +180,12 @@
       </div>
     </div>
 
+    <div id = "peopleorderingvideo">
+      <video class="video-container" autoplay loop muted playsinline>
+        <source src="bc-people-ordering.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </div>
+
     <div id="Closing">
       <div id = "Story"> 
         <div class = "story-text">
@@ -200,7 +206,43 @@
           </p>
         </div>
       </div>
+      
+    <div id="Center">
+      <div id="Game">
+        <div id = "Inside">
+          <div id="Images">
+            <div class="container">
+              <div class="croissant" id="croissant"></div>
+              <img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Peter_Griffin.png" class="flavor" id="pistachio">
+              <img src="croissant-almond.png" class="flavor" id="almond">
+              <img src="Croissant-sugar.png" class="pizazz" id="cardamonsugar">
+              <img src="croissant-poop.png" class="pizazz" id="poop">
+            </div>
+          </div>
+          <div id="Menu">
+            <div>
+              <button onclick="showOptions('flavor')">Show Flavors</button>
+              <button onclick="showOptions('pizazz')">Show Pizazz</button>
+            </div>
+            <div id="flavor-options">
+              <button onclick="changeOption('flavor', 'pistachio')">Pistachio Cream</button><br>
+              <button onclick="changeOption('flavor', 'almond')">Almond Butter</button>
+            </div>
+            <div id="pizazz-options" class="pizzaz-options">
+              <button onclick="changeOption('pizazz', 'cardamonsugar')">Cardamon Sugar</button><br>
+              <button onclick="changeOption('pizazz', 'poop')">Poop</button>
+            </div>
+          </div>
+        </div>
+        <div id="NameDisplay"><h2><span id="flavorName"></span> <span id="pizazzName"></span> Croissant</h2></div>
+      </div>
     </div>
+      <script src="game.js"></script>
+  
+
+
+    </div>
+    
 
   </body>
 </html>

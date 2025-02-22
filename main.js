@@ -11,7 +11,14 @@ window.addEventListener("scroll", () => {
             
                         // Map scroll position to horizontal movement
                         const moveX = (scrollPosition / maxScroll) * maxMove;
+
+                        // Pendulum effect using sine function
+                        const swingAmplitude = 10; // How much it swings (degrees)
+                        const swingSpeed = 0.02; // Adjust frequency of swing
+                        const angle = Math.sin(scrollPosition * swingSpeed) * swingAmplitude;
+
+                        // Apply movement and rotation
+                        box.style.transform = `translateX(${moveX}px) rotate(${angle}deg)`;
             
-                        // Apply transformation
-                        box.style.transform = `translateX(${moveX}px)`;
-                    });                   
+                    }); 
+                
