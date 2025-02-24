@@ -20,11 +20,18 @@ function updateName(optionId) {
     } else if (optionId === 'almond') {
         name = 'Almond Butter ';
         document.getElementById('flavorName').textContent = name;
+    } else if (optionId === 'chocolate') {
+        name = 'Chocolate ';
+        document.getElementById('flavorName').textContent = name;
     } else if (optionId === 'cardamonsugar') {
         name = 'Cardamon Sugar ';
         document.getElementById('pizazzName').textContent = name;
-    } else if (optionId === 'poop') {
-        name = 'Poop ';
+    } else if (optionId === 'yolk') {
+        name = 'Egg ';
+        document.getElementById('pizazzName').textContent = name;
+    }
+    else if (optionId === 'cheese') {
+        name = 'Cheese ';
         document.getElementById('pizazzName').textContent = name;
     }
 }
