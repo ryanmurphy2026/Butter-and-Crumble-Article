@@ -112,7 +112,7 @@ a {
     position: relative;
     z-index: 9;
     text-align: center;
-    background-color: yellow;
+    margin-right: 40px;
 }
 
 
@@ -124,9 +124,9 @@ a {
 
 #First-Text-Section{
     background: #FAF8F0;
-    height: 160vh;  
     overflow: hidden;
     padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 #Story{
@@ -257,8 +257,8 @@ a {
     width: 300px;
     height: 300px;
     border-radius: 20px;
-    border: 2px solid white;
-    background-image: linear-gradient(#F49FB6, rgb(243, 111, 210));;
+    border: 2px solid black;
+    background-image: linear-gradient(#ffdff2, #efb1d6);
     
 }
 
@@ -290,6 +290,10 @@ button {
     margin-bottom: -40px;
     margin-top: -16px;
     cursor: pointer;
+}
+
+.gamebutton:active {
+    transform: scale(0.8);
 }
 
 #pizazz-options { 

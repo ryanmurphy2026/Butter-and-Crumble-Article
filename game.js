@@ -5,6 +5,7 @@ function changeOption(type, optionId) {
     updateName(optionId);
 }
 
+
 function showOptions(category) {
     document.getElementById('flavor-options').style.display = (category === 'flavor') ? 'block' : 'none';
     document.getElementById('pizazz-options').style.display = (category === 'pizazz') ? 'block' : 'none';
