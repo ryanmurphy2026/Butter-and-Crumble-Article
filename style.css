@@ -10,7 +10,7 @@ h3 {
 
 @media (max-width: 700px){
     h3{
-        font-size: 40px;
+        font-size: 20px;
     }
 }
 
@@ -43,16 +43,7 @@ a {
     z-index: 999;
 }
 
-@media (max-width: 720px){
-    #Scroll-Guy{
-        width: 60px;
-        height: 100px; 
-    }
-    #Bakery{
-        width: 160px;
-        height: 180px;
-    }
-}
+
 
 
 #Title-Background{
@@ -105,21 +96,40 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
 #Title-and-Byline{
     position: relative;
     z-index: 9;
     text-align: center;
-    margin-right: 40px;
+    margin-right: -200px;
+    order: 1;
 }
 
+#Byline{
+    font: Poppins;
+}
 
 #Title-Image{
     position: relative;
     z-index: 10;
     width: 300px;
+    order: 2;
+}
+
+@media (max-width: 700px){
+    #Title-Section{
+        display: block;
+    }
+
+    #Title-Image{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 #First-Text-Section{
@@ -141,9 +151,8 @@ a {
     text-align: justify; 
 }
 
-@media (max-width: 500px){
+@media (max-width: 700px){
     .story-text{
-        font-size: 30px;
         width: 80vw;
     }
 }
@@ -171,12 +180,25 @@ a {
 }
 
 #tiktoks{
-    min-width:100%;
     overflow: hidden;
     display: flex;
     background: #FAF8F0;
-    align-items: center;
-    object-fit: cover;
+    justify-content: center; /* This centers content HORIZONTALLY in a flexbox, which is what you want */
+    align-items: center; /* You can delete this line. It centers content VERTICALLY. */
+}
+
+/* On smaller screens, make the video 900px wide, so it overflows */
+@media (max-width: 899px) {
+    #tiktoks video {
+        width: 900px;
+    }
+}
+
+/* On bigger screens, make the video full-width */
+@media (min-width: 900px) {
+    #tiktoks video {
+        width: 100%;
+    }
 }
 
 #Virality{
@@ -187,13 +209,25 @@ a {
 }
 
 #peopleorderingvideo{
-    min-width:100%;
-    display: inline;
     overflow: hidden;
     display: flex;
     background: #FAF8F0;
-    align-items: center;
-    object-fit: cover;
+    justify-content: center; /* This centers content HORIZONTALLY in a flexbox, which is what you want */
+    align-items: center; /* You can delete this line. It centers content VERTICALLY. */
+}
+
+/* On smaller screens, make the video 900px wide, so it overflows */
+@media (max-width: 899px) {
+    #peopleorderingvideo video {
+        width: 900px;
+    }
+}
+
+/* On bigger screens, make the video full-width */
+@media (min-width: 900px) {
+    #peopleorderingvideo video {
+        width: 100%;
+    }
 }
 
 #Line{
@@ -221,6 +255,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#GameName{
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 #Game { 
