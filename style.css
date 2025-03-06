@@ -111,7 +111,8 @@ a {
 }
 
 #Byline{
-    font: Poppins;
+    font-family: Poppins;
+    font-size: 16px;
 }
 
 #Title-Image{
@@ -126,9 +127,15 @@ a {
         display: block;
     }
 
+    #Title-and-Byline{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
     #Title-Image{
         margin-left: 10%;
         margin-right: 10%;
+        width: 40%;
     }
 }
 
