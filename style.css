@@ -44,14 +44,22 @@ a {
 }
 
 
-
-
 #Title-Background{
     background: #F49FB6;
     height: 80vh;  
     overflow: hidden;
     position: relative;
     padding-bottom: 3vh;
+}
+
+@media (max-width: 700px){
+    #Title-Background{
+        background: #F49FB6;
+        height: 110vh;  
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 3vh;
+    }
 }
 
   
@@ -122,6 +130,12 @@ a {
     order: 2;
 }
 
+#titleimage{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+}
+
+
 @media (max-width: 700px){
     #Title-Section{
         display: block;
@@ -135,7 +149,20 @@ a {
     #Title-Image{
         margin-left: 10%;
         margin-right: 10%;
-        width: 40%;
+        width: 90%;
+    }
+    #titleimage{
+        width:100%;
+    }
+
+    #Title-and-Byline{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 90%;
+    }
+
+    #ArticleName{
+        width:100%;
     }
 }
 
@@ -267,6 +294,15 @@ a {
 #GameName{
     margin-left: 25%;
     margin-right: 25%;
+    width: 50%;
+}
+
+@media (max-width: 700px) {
+    #GameName {
+        margin-left: 5%;
+        margin-right: 10%;
+        width: 90%;
+    }
 }
 
 #Game { 
@@ -284,7 +320,25 @@ a {
     padding-bottom: 10px;
     outline: 2px solid white;
     outline-offset: -20px;
-    
+}
+
+@media (max-width: 700px) {
+    #Game {
+        width: 360px; 
+        height: 225px;
+        border: 12px solid #ED4E8B;
+        background-image: url(game-background.png);
+        background-color: #0CCE6B;
+        background-size: 100% 100%;
+        border-radius: 6px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        padding: 12px; 
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 6px;
+        outline: 2px solid white;
+        outline-offset: -12px;
+    }
 }
 
 #Inside {
@@ -314,6 +368,21 @@ a {
     background: url('croissant.png') no-repeat center/cover; 
 }
 
+@media (max-width: 700px) {
+    #Menu {
+        width: 180px;
+        height: 180px;
+        border-radius: 12px;
+        border: 2px solid black;
+        background-image: linear-gradient(#ffdff2, #efb1d6); 
+    }
+    .croissant { 
+        width: 180px; 
+        height: 180px; 
+        background: url('croissant.png') no-repeat center/cover; 
+    }
+}
+
 .flavor, .pizazz { 
     position: absolute; 
     top: 0; 
@@ -337,6 +406,38 @@ button {
     margin-top: -16px;
     cursor: pointer;
 }
+
+@media (max-width: 700px) {
+    .flavor, .pizazz { 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 180px; 
+        height: 180px; 
+        display: none; 
+    }
+    
+    
+    button { 
+        margin: 6px;
+        padding: 0px;
+        cursor: pointer; 
+        border: none;
+        
+    }
+    
+    .gamebutton{
+        margin-bottom: -24px;
+        margin-top: -9px;
+        cursor: pointer;
+    }
+
+    #NameDisplay{
+        font-size: .6em;
+    }
+}
+
+
 
 .gamebutton:active {
     transform: scale(0.8);

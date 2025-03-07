@@ -24,8 +24,17 @@ function updateName(optionId) {
     } else if (optionId === 'chocolate') {
         name = 'Chocolate ';
         document.getElementById('flavorName').textContent = name;
+    } else if (optionId === 'strawberry') {
+        name = 'Strawberry ';
+        document.getElementById('flavorName').textContent = name;
     } else if (optionId === 'cardamonsugar') {
         name = 'Cardamon Sugar ';
+        document.getElementById('pizazzName').textContent = name;
+    } else if (optionId === 'herb') {
+        name = 'Herb ';
+        document.getElementById('pizazzName').textContent = name;
+    } else if (optionId === 'coconut') {
+        name = 'Coconut ';
         document.getElementById('pizazzName').textContent = name;
     } else if (optionId === 'yolk') {
         name = 'Egg ';
@@ -35,4 +44,6 @@ function updateName(optionId) {
         name = 'Cheese ';
         document.getElementById('pizazzName').textContent = name;
     }
+
+
 }
