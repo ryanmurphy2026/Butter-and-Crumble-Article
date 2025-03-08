@@ -27,6 +27,9 @@ function updateName(optionId) {
     } else if (optionId === 'strawberry') {
         name = 'Strawberry ';
         document.getElementById('flavorName').textContent = name;
+    } else if (optionId === 'steak') {
+        name = 'Steak ';
+        document.getElementById('flavorName').textContent = name;
     } else if (optionId === 'cardamonsugar') {
         name = 'Cardamon Sugar ';
         document.getElementById('pizazzName').textContent = name;

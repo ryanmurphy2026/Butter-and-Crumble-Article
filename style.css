@@ -24,6 +24,12 @@ a {
     color: #ED4E8B;
 }
 
+figcaption{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 300;
+}
+
 
 
 #Scroll-Guy{
